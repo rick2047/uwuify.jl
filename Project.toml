@@ -1,0 +1,13 @@
+name = "uwuify"
+uuid = "f61b49aa-9af5-4256-bdd9-f8499b02b5dd"
+authors = ["Paresh Mathur <paresh2047@gmail.com> and contributors"]
+version = "0.1.0"
+
+[compat]
+julia = "1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
