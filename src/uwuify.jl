@@ -1,11 +1,11 @@
 module uwuify
-# replace("123",[r"1" => s"a", r"a2" => s"12"])
-
-
+const CHAR_REPLACEMENTS = [
+    "l"=>"w","L"=>"W",
+    "r"=>"w","R"=>"W"
+]
 export uwu
 function uwu(s::AbstractString)
-    reduce(replace, ["l"=>"w","r"=>"w"],init=s)
-    # replace(s, "l"=>"w")
+    reduce(replace, CHAR_REPLACEMENTS,init=s)
 end
 
 export @uwu_str
